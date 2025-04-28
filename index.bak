@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITems Consulting – IT Management Consultancy</title>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('background.jpg') no-repeat center center/cover;
+            opacity: 75%;
+            z-index: -1;
+        }
+        .content {
+            position: absolute;
+            top: 5%;
+            left: 30%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 600px;
+            text-align: center;
+        }
+        header img {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 200px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            z-index: 999;
+            padding: 20px;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px 0;
+            float: left;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333333;
+        }
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        footer {
+            font-size: 0.5em;
+            margin-top: 20px;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            animation: slide-down 0.5s;
+        }
+        @keyframes slide-down {
+            0% {
+              transform: translateY(-100%);
+            }
+            100% {
+              transform: translateY(0%);
+            }
+        }
+    </style>
+</head>
+<header>
+    <div class="logo">
+        <img src="logo.jpg" alt="ITems Consulting Logo">
+    </div>
+    <div class="nav"></div>
+</header>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <section id="fractional-cio">
+            <h2>Fractional CIO/IT Director</h2>
+            <p>Most businesses would benefit from strategic leadership around Technology and Data.</p>
+            <p>In the SME space, it is often difficult to justify the expense of a permanent employee to lead the IT function, provide the strategic direction, and act as the subject matter expert to the board and management team.</p>
+            <p>Our Fractional CIO/IT Director service addresses the needs of an SME business where technology is key to operations, but not necessarily core to why the business exists. We work with your business in a flexible and responsive way, with as much or as little resource as you need as the business grows, changes, and develops.</p>
+            <p>We may work with you on a specific project – say the implementation of a new system or integration, or a review of your technology architecture. We can manage the delivery of solutions, act as your trusted technology adviser, and as a key part of your management team. We will undertake service reviews, supplier negotiation and management. A Fractional CIO/IT Director can help whatever your business needs from technology.</p>
+            <p>If having a senior, experienced, and flexible IT Leader is of interest, without the usual hassles of recruitment and costs of employment, please get in touch. We’d love to work with you.</p>
+        </section>
+        <section id="it-management">
+            <h2>IT Management Consultancy</h2>
+            <p>Providing management consultancy and advice in operational and strategic technology areas across a number of vertical channels including FMCG, Legal, Retail.</p>
+            <p>Technology in an age of device convergence is not channel- or industry- specific, and ITems Consulting can support and assist with strategy, analysis, and development across the spectrum.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If your business needs IT strategy advice, or a fractional IT Director/CTO, please get in touch.</p>
+            <p>Based in South Yorkshire, we work across the UK.</p>
+            <p><i>Mark Smith<br>
+            Founding Consultant</i></p>
+            <p>Email: <a href="mailto:info@items-consulting.com">info@items-consulting.com</a></p>
+        </section>
+        <footer>
+            <p>&copy; 2020-2025 ITems Consulting Ltd.<br>ITems Consulting Ltd is a limited liability company registered in England and Wales, company number 12479127.<br>Registered Address: Union House, 111 New Union Street, Coventry CV1 2NT United Kingdom</p>
+        </footer>
+    </div>
+</body>
+</html>
